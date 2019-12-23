@@ -1,0 +1,122 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bongo-Cat Creator</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/c4e65900-d574-4a30-ab84-cd913b7fa895%2Ffavicon.ico?1537295676500" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="./client.js" defer></script>
+  </head>
+  <body>
+    
+    <div id="smallOverview">
+      <h1>
+        Bongo-Cat Creator
+      </h1>
+      <img src="https://cdn.glitch.com/c4e65900-d574-4a30-ab84-cd913b7fa895%2Fbongo-cat.gif?1537302652732">
+      <p>
+        Create your own bongo cat by uploading a track and using keyboard input to make bongocat play.  Screen + audio record to put together your final video.
+      </p>
+      <p>
+        Open on desktop to get started.
+      </p>    
+    </div>
+    
+    <div>
+      <h1>
+        Bongo-Cat Creator
+      </h1>
+
+    <main>
+      <div style="margin-right: 100px;">
+        <img id="bongo-cat" src="https://cdn.glitch.com/c4e65900-d574-4a30-ab84-cd913b7fa895%2Fneutral.svg?1537295202313"/>
+        <img id="keyboard" src="https://cdn.glitch.com/c4e65900-d574-4a30-ab84-cd913b7fa895%2Fkeyboard-outline.svg?1537295201926"/>
+      </div>
+      
+      <div>
+        
+      <div id="instructions">
+        <h3>
+          Instructions:
+        </h3>
+        Upload a song below and press keys on your keyboard to have <a href="https://knowyourmeme.com/memes/bongo-cat" target="_blank">#bongocat</a> play along.  You can use a tool like Quicktime to do a screen and audio recording!
+        <p style="color: grey; font-size: small">
+          Default song is from Mario Paint (:
+        </p>
+      </div>
+      
+      <div class="audio-form">
+        <input type="file" name="file" id="file" accept="audio/*">
+        <label for="file">Upload audio file</label> &nbsp;
+        <span>(mp3, m4a, or wav)</span>
+      </div>
+        
+      <div class="audio-player">
+        <audio controls>
+          <source src="https://cdn.glitch.com/c4e65900-d574-4a30-ab84-cd913b7fa895%2Fmario-paint.mp3?1537304790163" type="audio/mp3">
+        </audio>
+      </div>
+      
+      <div class="help-text">
+        <div class="keypress">
+          Keypressed: <span id="key"></span>
+        </div>
+        <div class="key-instructions">
+          Possible keyboard input: a, s, d, f, j, k, space, enter
+        </div>
+      </div>
+      
+        <div style="color: grey; margin-top: 50px; font-size: small">
+          <p>
+            App created by <a href="https://twitter.com/scientiffic" target="_blank">@scientiffic</a>
+          </p>
+          <p>
+            Bongo Cat originally created by <a href="https://twitter.com/StrayRogue" target="_blank">@StrayRogue</a> and <a href="https://twitter.com/DitzyFlama" target="_blank">@DitzyFlama</a>
+          </p>
+        </div>
+    </div>
+    
+      
+    </main>
+
+</div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+  </body>
+</html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126011393-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126011393-1');
+</script>

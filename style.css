@@ -1,0 +1,139 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+#smallOverview{
+  display: none;
+}
+#smallOverview img{
+  width: 100%;
+}
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  color: #373fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+main{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+
+p {
+  max-width: 600px;
+}
+
+#bongo-cat{
+  width: 600px;
+}
+
+#keyboard{
+  width: 302px;
+  display: none;
+  position: absolute;
+  left: -30px;
+  bottom:-10px;
+  z-index: -1;
+}
+
+#instructions{
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.help-text .keypress{
+  visibility: hidden;
+  font-weight: bold;
+}
+
+.audio-form{
+  margin: 15px 0px;
+}
+
+.audio-form span{
+  font-size: small;
+}
+
+.audio-player{
+  margin-bottom: 30px;
+}
+
+label{
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+label:hover{
+  background-color: yellow;
+}
+
+input{
+  border: none;
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
